@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Program5 
+{
+	public static void main(String[] args) 
+	{
+		int num,digit,sum=0,copynum;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		num=sc.nextInt();
+		copynum=num;
+		do
+		{
+			digit=num%10;
+			sum=(sum*10)+digit;
+			num=num/10;
+		}
+		while (num!=0);
+		System.out.println("the reverse order"+copynum+ "is" +sum);
+		int diff=copynum-sum;
+		System.out.println("the diff of num"+copynum+ "is and reversed"+sum+ "is" +diff);
+
+	}
+}
