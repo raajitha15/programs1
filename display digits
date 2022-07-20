@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Program1 
+{
+	public static void main(String[] args) 
+	{
+		int num,digit,sum=0,digit2;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		num=sc.nextInt();
+		do
+		{
+			digit=sum%10;
+			sum=(sum*10)+digit;
+			num=num/10;
+		}
+		while (num!=0);
+		System.out.println(sum);
+		do
+		{
+			digit2=sum%10;
+			System.out.println(digit2);
+			sum=sum/10;
+		}
+		while (sum!=0);
+	}
+}
