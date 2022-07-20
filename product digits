@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Program3 
+{
+	public static void main(String[] args) 
+	{
+		int num,digit,product=1,copynum;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		num=sc.nextInt();
+		copynum=num;
+		do
+		{
+			digit=num%10;
+			product=product*digit;
+			num=num/10;
+		}
+		while (num!=0);
+		System.out.println("the product of the two digits" +copynum+ "are:" +product);
+	}
+}
+
